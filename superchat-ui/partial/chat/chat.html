@@ -1,0 +1,17 @@
+<div class="col-md-12" ng-controller="ChatCtrl">
+    <h2>Chatting with {{otherUser}}:</h2>
+
+    <div style="float: left;">
+        <textarea style="height: 300px; width: 300px;"></textarea>
+        <br>
+        Your Message:<br>
+        <textarea style="height: 100px; width: 300px"></textarea>
+        <br>
+        <button>Send</button>
+    </div>
+    <div style="float: left;">
+        <topics-list user-id="lysha"></topics-list>
+        <br>
+        <topics-list user-id="nick"></topics-list>
+    </div>
+</div>

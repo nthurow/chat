@@ -1,0 +1,11 @@
+<div>
+    <h3>{{userDisplay}} Topics:</h3>
+    <ul ng-repeat="topic in topics">
+        <li>{{topic.desc}} <span ng-if="userIsLoggedInUser">[<a href="" ng-click="removeTopic(topic)">Remove</a>]</span>
+        </li>
+    </ul>
+    <div ng-if="userIsLoggedInUser">
+        <input type="text" ng-model="newTopic"/>
+        <button ng-click="addTopic(newTopic)">Add Topic</button>
+    </div>
+</div>
